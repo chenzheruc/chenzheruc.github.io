@@ -1,2 +1,2 @@
-# chenzheruc.github.io
+# chenzhe.github.io
 Shirley's Homepage
