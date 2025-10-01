@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Shirley Machine Learning Blog</title>
+    <title>Posts on Shirley Random Blogs</title>
     <link>https://chenzheruc.github.io/posts/</link>
-    <description>Recent content in Posts on Shirley Machine Learning Blog</description>
+    <description>Recent content in Posts on Shirley Random Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The Roadblocks to AI Adoption: Key Challenges of Working with AI Systems</title>
+      <title>The Roadblocks to AI Adoption: Key Challenges</title>
       <link>https://chenzheruc.github.io/posts/ai_system_challenges/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
       <guid>https://chenzheruc.github.io/posts/ai_system_challenges/</guid>
