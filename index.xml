@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Shirley Machine Learning Blog</title>
     <link>https://chenzheruc.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Shirley Machine Learning Blog</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 Sep 2025 23:07:37 -0700</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Gan</title>
+      <title>GAN</title>
       <link>https://chenzheruc.github.io/posts/gan/</link>
       <pubDate>Tue, 30 Sep 2025 23:07:37 -0700</pubDate>
       <guid>https://chenzheruc.github.io/posts/gan/</guid>
-      <description>&lt;p&gt;this is the test.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Will start something soon.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
