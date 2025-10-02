@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shirley Random Blogs</title>
+    <link>https://chenzheruc.github.io/</link>
+    <description>Recent content on Shirley Random Blogs</description>
+    <generator>Hugo -- 0.150.1</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chenzheruc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Roadblocks to AI Adoption: Key Challenges</title>
+      <link>https://chenzheruc.github.io/posts/ai_system_challenges/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://chenzheruc.github.io/posts/ai_system_challenges/</guid>
+      <description>&lt;p&gt;Artificial intelligence systems are rapidly transforming the global economy, promising unprecedented efficiency, insight, and innovation. However, transitioning from AI&amp;rsquo;s theoretical potential to practical, ethical, and scalable application is fraught with significant challenges.&lt;/p&gt;
+&lt;h2 id=&#34;ethical-and-trust-concerns&#34;&gt;Ethical and Trust Concerns&lt;/h2&gt;
+&lt;p&gt;The most public and critical challenges surrounding AI revolve around how these powerful systems interact with human values, fairness, and accountability.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;The Black Box Problem (Lack of Explainability)&lt;/strong&gt;. The &amp;ldquo;black box&amp;rdquo; nature of advanced AI, where decision-making logic is opaque to users and developers, creates the Explainable AI (XAI) crisis that prevents necessary auditing, justification, and trust in critical sectors like finance and healthcare.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
