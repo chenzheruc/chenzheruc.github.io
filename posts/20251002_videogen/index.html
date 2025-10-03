@@ -120,8 +120,8 @@ Leading text-to-video generation tools, such as Sora (OpenAI), Veo 3 (Google), R
   "keywords": [
     
   ],
-  "articleBody": "Following the release of Sora 2 two days ago, Sam Altman has become widely recognized due to his frequent appearances in popular social media videos.\nSam Altman in Shanghai Sam Altman in Acient China Sam Altman talks to a random person Leading text-to-video generation tools, such as Sora (OpenAI), Veo 3 (Google), Runway, and Kling AI (Kuaishou), are gaining popularity; however, detailed public documentation regarding their underlying training methodologies remains scarce. For example, OpenAI simply noted that Sora takes inspiration from large language models (LLMs) that acquire generalist capabilities by training on “internet-scale data. It is possible that OpenAI may have scraped YouTube content without permission from Google. On the other hand, Google’s Veo is assumed to benefit from YouTube’s high-quality video. The implication is clear: the ability to generate realistic video is directly proportional to access to petabytes of high-quality, varied footage.\nIn contrast to these guarded, commercial efforts, open research and published technical reports offer valuable insights into the necessary ingredients for high-quality video generation. For instance, detailed data curation and scaling strategies are explored in foundational models such as:\nMovie Gen: A Cast of Media Foundation Models (https://arxiv.org/abs/2410.13720) on Feb 2025 from Meta. HunyuanVideo: A Systematic Framework For Large Video Generative Models (https://arxiv.org/abs/2412.03603) on March 2025 from Tencent. In this article, we deep dive on the data collections according to the two paper above.\nMovie Gen Pre-training Dataset Their pre-training dataset consists of O(100)M video-text pairs and O(1)B image-text pairs.\n",
-  "wordCount" : "243",
+  "articleBody": "Following the release of Sora 2 two days ago, Sam Altman has become widely recognized due to his frequent appearances in popular social media videos.\nSam Altman in Shanghai Sam Altman in Acient China Sam Altman talks to a random person Leading text-to-video generation tools, such as Sora (OpenAI), Veo 3 (Google), Runway, and Kling AI (Kuaishou), are gaining popularity; however, detailed public documentation regarding their underlying training methodologies remains scarce. For example, OpenAI simply noted that Sora takes inspiration from large language models (LLMs) that acquire generalist capabilities by training on “internet-scale data. It is possible that OpenAI may have scraped YouTube content without permission from Google. On the other hand, Google’s Veo is assumed to benefit from YouTube’s high-quality video. The implication is clear: the ability to generate realistic video is directly proportional to access to petabytes of high-quality, varied footage.\nIn contrast to these guarded, commercial efforts, open research and published technical reports offer valuable insights into the necessary ingredients for high-quality video generation. For instance, detailed data curation and scaling strategies are explored in foundational models such as:\nMovie Gen: A Cast of Media Foundation Models (https://arxiv.org/abs/2410.13720) on Feb 2025 from Meta. HunyuanVideo: A Systematic Framework For Large Video Generative Models (https://arxiv.org/abs/2412.03603) on March 2025 from Tencent. In this article, we deep dive on the data collections according to the two paper above.\nMovie Gen Our pre-training dataset consists of O(100)M video-text pairs and O(1)B image-text pairs.\nOur original pool of data consists of videos that are 4 seconds to 2 minutes long, spanning concepts from different domains such as humans, nature, animals, and objects. Our data curation pipeline yields our final pre-training set of clip-prompt pairs, where each clip is 4s – 16s long, with single-shot camera and non-trivial motion. Our data curation pipeline consists of three filtering stages: 1) visual filtering, 2) motion filtering, and 3) content filtering, and one captioning stage. The filtered clips are annotated with detailed generated captions containing 100 words on average.\nOne more interesting step mentioned is “Multi-stage data curation”, likely due to the intuition of curriculumn learning from easy to hard.\nWe curate 3 subsets of pre-training data with progressively stricter visual, motion, and content thresholds to meet the needs of different stages of pre-training. First, we curated a set of video clips with a minimum width and height of 720 px for low-resolution training. Next, we filtered the set to provide videos with a minimum width and height of 768 px for high-resolution training. Finally, we curated new videos augmenting our high-resolution training set. Our high resolution set has 80% landscape and 20% portrait videos, with at least 60% of them containing humans.\nAnother small finetuning high-quality and manually curated dataset was created, with the goal to improve the video generation quality. Instead of training one model, multiple models will be produced via fine tuning to form the final model with “ensemble” like technique. The extensive manual labor required for cinematic quality control highlights a fundamental, and often debated, trade-off between human oversight and automated scalability in data curation.\nHunyuanVideo To curate the pretraining data, HunyuanVideo follows a similar workflow. Similarly, HunyunVideo curate the multi-stage dataset to support multi-stage training from easy to hard, and they also manually curate a high-quality finetuning dataset to further improve model quality.\nOur hierarchical data filtering pipeline for video data yields five training datasets, corresponding to the five training stages\nwe build a fine-tuning dataset comprising ∼1M samples. This dataset is meticulously curated through human annotation.\nConclusion Ultimately, the power of modern video generation hinges on massive, hyper-detailed datasets. The path forward requires resolving the core tension between the models’ need for near-infinite real-world data and the legal and ethical frameworks restricting its free use. Leveraging real-life data streams captured by emerging technologies like smart glasses presents one potential solution for continuously feeding the AI’s “world simulator.”\nReferences *This article is inspired by Mu Li’s YouTube talk.\n",
+  "wordCount" : "656",
   "inLanguage": "en",
   "datePublished": "2025-10-02T00:00:00Z",
   "dateModified": "2025-10-02T00:00:00Z",
@@ -218,13 +218,14 @@ Leading text-to-video generation tools, such as Sora (OpenAI), Veo 3 (Google), R
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#movie-gen" aria-label="Movie Gen">Movie Gen</a><ul>
-                        
+                    <a href="#movie-gen" aria-label="Movie Gen">Movie Gen</a></li>
                 <li>
-                    <a href="#pre-training-dataset" aria-label="Pre-training Dataset">Pre-training Dataset</a>
+                    <a href="#hunyuanvideo" aria-label="HunyuanVideo">HunyuanVideo</a></li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a></li>
+                <li>
+                    <a href="#references" aria-label="References">References</a>
                 </li>
-            </ul>
-            </li>
             </ul>
         </div>
     </details>
@@ -241,9 +242,9 @@ Leading text-to-video generation tools, such as Sora (OpenAI), Veo 3 (Google), R
   </thead>
   <tbody>
       <tr>
-          <td style="text-align: center"><img loading="lazy" src="/pic/sam_altman_1.png"></td>
-          <td style="text-align: center"><img loading="lazy" src="/pic/sam_altman_2.png"></td>
-          <td style="text-align: center"><img loading="lazy" src="/pic/sam_altman_3.png"></td>
+          <td style="text-align: center"><img loading="lazy" src="/pic/20251002/sam_altman_1.png"></td>
+          <td style="text-align: center"><img loading="lazy" src="/pic/20251002/sam_altman_2.png"></td>
+          <td style="text-align: center"><img loading="lazy" src="/pic/20251002/sam_altman_3.png"></td>
       </tr>
   </tbody>
 </table>
@@ -255,8 +256,46 @@ Leading text-to-video generation tools, such as Sora (OpenAI), Veo 3 (Google), R
 </ul>
 <p>In this article, we deep dive on the data collections according to the two paper above.</p>
 <h2 id="movie-gen">Movie Gen<a hidden class="anchor" aria-hidden="true" href="#movie-gen">#</a></h2>
-<h3 id="pre-training-dataset">Pre-training Dataset<a hidden class="anchor" aria-hidden="true" href="#pre-training-dataset">#</a></h3>
-<p>Their pre-training dataset consists of O(100)M video-text pairs and O(1)B image-text pairs.</p>
+<blockquote>
+<p>Our pre-training dataset consists of O(100)M video-text pairs and O(1)B image-text pairs.</p></blockquote>
+<blockquote>
+<p>Our original pool of data consists of videos that are 4 seconds to 2 minutes long, spanning concepts from
+different domains such as humans, nature, animals, and objects. Our data curation pipeline yields our final
+pre-training set of clip-prompt pairs, where each clip is 4s – 16s long, with single-shot camera and non-trivial
+motion.
+Our data curation pipeline consists of three filtering stages: 1) visual
+filtering, 2) motion filtering, and 3) content filtering, and one captioning stage. The filtered clips are annotated
+with detailed generated captions containing 100 words on average.</p></blockquote>
+<p><img loading="lazy" src="/pic/20251002/videogen_data_flow.png"></p>
+<p>One more interesting step mentioned is &ldquo;Multi-stage data curation&rdquo;, likely due to the intuition of curriculumn learning
+from easy to hard.</p>
+<blockquote>
+<p>We curate 3 subsets of pre-training data with progressively stricter visual, motion,
+and content thresholds to meet the needs of different stages of pre-training. First, we curated a set of video
+clips with a minimum width and height of 720 px for low-resolution training. Next, we filtered the set to
+provide videos with a minimum width and height of 768 px for high-resolution training. Finally, we curated
+new videos augmenting our high-resolution training set. Our high resolution set has 80% landscape and 20%
+portrait videos, with at least 60% of them containing humans.</p></blockquote>
+<p>Another small finetuning high-quality and manually curated dataset was created,
+with the goal to improve the video generation quality. Instead of training one model,
+multiple models will be produced via fine tuning to form the final model with &ldquo;ensemble&rdquo; like technique.
+The extensive manual labor required for cinematic quality control highlights a fundamental,
+and often debated, trade-off between human oversight and automated scalability in data curation.</p>
+<h2 id="hunyuanvideo">HunyuanVideo<a hidden class="anchor" aria-hidden="true" href="#hunyuanvideo">#</a></h2>
+<p>To curate the pretraining data, HunyuanVideo follows a similar workflow.
+<img loading="lazy" src="/pic/20251002/hunyuan_data_flow.png"></p>
+<p>Similarly, HunyunVideo curate the multi-stage dataset to support multi-stage training from easy to hard,
+and they also manually curate a high-quality finetuning dataset to further improve model quality.</p>
+<blockquote>
+<p>Our hierarchical data filtering pipeline for video data yields five training datasets, corresponding
+to the five training stages</p></blockquote>
+<blockquote>
+<p>we build a fine-tuning dataset
+comprising ∼1M samples. This dataset is meticulously curated through human annotation.</p></blockquote>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Ultimately, the power of modern video generation hinges on massive, hyper-detailed datasets. The path forward requires resolving the core tension between the models&rsquo; need for near-infinite real-world data and the legal and ethical frameworks restricting its free use. Leveraging real-life data streams captured by emerging technologies like smart glasses presents one potential solution for continuously feeding the AI&rsquo;s &ldquo;world simulator.&rdquo;</p>
+<h2 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h2>
+<p>*This article is inspired by <a href="https://www.youtube.com/watch?v=5MGq7dSOghY">Mu Li&rsquo;s YouTube talk</a>.</p>
 
 
   </div>
