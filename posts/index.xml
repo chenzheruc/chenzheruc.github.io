@@ -6,32 +6,8 @@
     <description>Recent content in Posts on Shirley Random Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Unseen Architects for Video Generation AI: (1) Training Datasets</title>
-      <link>https://chenzheruc.github.io/posts/videogen/</link>
-      <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://chenzheruc.github.io/posts/videogen/</guid>
-      <description>&lt;p&gt;Following the release of Sora 2 two days ago, Sam Altman has become widely recognized due to his frequent appearances in popular social media videos.&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;Sam Altman in Shanghai&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;Sam Altman in Acient China&lt;/th&gt;
-          &lt;th style=&#34;text-align: center&#34;&gt;Sam Altman talks to a random person&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://chenzheruc.github.io/pic/sam_altman_1.png&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://chenzheruc.github.io/pic/sam_altman_2.png&#34;&gt;&lt;/td&gt;
-          &lt;td style=&#34;text-align: center&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://chenzheruc.github.io/pic/sam_altman_3.png&#34;&gt;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Leading text-to-video generation tools, such as Sora (OpenAI), Veo 3 (Google), Runway, and Kling AI (Kuaishou), are gaining popularity; however, detailed public documentation regarding their underlying training methodologies remains scarce. For example, OpenAI simply noted that Sora takes inspiration from large language models (LLMs) that acquire generalist capabilities by training on &amp;ldquo;&lt;a href=&#34;https://openai.com/index/video-generation-models-as-world-simulators/&#34;&gt;internet-scale data&lt;/a&gt;. It is possible that OpenAI may have scraped YouTube content without permission from Google. On the other hand, Google’s Veo is assumed to benefit from YouTube&amp;rsquo;s high-quality video. The implication is clear: the ability to generate realistic video is directly proportional to access to petabytes of high-quality, varied footage.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>The Roadblocks to AI Adoption: Key Challenges</title>
       <link>https://chenzheruc.github.io/posts/ai_system_challenges/</link>
