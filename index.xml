@@ -6,8 +6,19 @@
     <description>Recent content on Shirley Random Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Idea to &#39;Vibe Code&#39;: Building a Kids&#39; Math App in a Few Hours</title>
+      <link>https://chenzheruc.github.io/posts/20251008_vibe_coding/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://chenzheruc.github.io/posts/20251008_vibe_coding/</guid>
+      <description>&lt;p&gt;It was one of those evenings. An idea sparked, and I just had to run with it.
+The concept was simple: a clean, fun, and straightforward web app for kids to practice basic
+addition and subtraction. No frills, no complicated sign-ups, just pure, simple math.
+I wanted to see if I could go from a thought to a functional product in just a few hours.
+This is the story of that little coding sprint.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Unseen Architects for Video Generation AI: Training Data</title>
       <link>https://chenzheruc.github.io/posts/20251002_videogen/</link>
