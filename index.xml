@@ -24,6 +24,14 @@
       <description>&lt;p&gt;The experience of working at Google is a bit like living in &amp;ldquo;Truman World.&amp;rdquo; We operate within a beautifully constructed world with arguably the planet&amp;rsquo;s best technical infrastructure. Need a massively scalable database, a world-class deployment system, or a complex data analysis tool? There&amp;rsquo;s likely an internal API for that, polished and ready to go. Plus the people around are all filtered by the extermely rigurous interview process. But what happens when you decide to peek over the wall, to see what life is like on the outside with the dream of building something of your own?&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Andrew Ng&#39;s Agentic AI Playbook</title>
+      <link>https://chenzheruc.github.io/posts/20251016_andrew_ng_agentic_ai/</link>
+      <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://chenzheruc.github.io/posts/20251016_andrew_ng_agentic_ai/</guid>
+      <description>&lt;p&gt;The world of AI is buzzing with a new paradigm: agentic AI. Instead of simply responding to a single prompt, these AI systems can reason, plan, use tools, and even critique their own work to accomplish complex, multi-step tasks. They represent a significant leap from the non-agentic models we&amp;rsquo;ve grown accustomed to.&lt;/p&gt;
+&lt;p&gt;As this technology matures, building effective and reliable agents has become a critical skill. AI luminary Andrew Ng, through his &lt;a href=&#34;https://www.deeplearning.ai/courses/agentic-ai/&#34;&gt;Coursera courses&lt;/a&gt; published one week ago and &lt;a href=&#34;https://www.youtube.com/watch?v=KrRD7r7y7NY&#34;&gt;YouTube talks&lt;/a&gt;, has laid out a clear, practical framework for developing these intelligent systems. This playbook distills his key principles into actionable best practices for anyone looking to build the next generation of AI.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>From Idea to &#39;Vibe Code&#39;: Building a Kids&#39; Math App in a Few Hours</title>
       <link>https://chenzheruc.github.io/posts/20251008_vibe_coding/</link>
       <pubDate>Wed, 08 Oct 2025 00:00:00 +0000</pubDate>
