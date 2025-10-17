@@ -88,8 +88,8 @@ As this technology matures, building effective and reliable agents has become a 
   "keywords": [
     
   ],
-  "articleBody": "The world of AI is buzzing with a new paradigm: agentic AI. Instead of simply responding to a single prompt, these AI systems can reason, plan, use tools, and even critique their own work to accomplish complex, multi-step tasks. They represent a significant leap from the non-agentic models we’ve grown accustomed to.\nAs this technology matures, building effective and reliable agents has become a critical skill. AI luminary Andrew Ng, through his Coursera courses published one week ago and YouTube talks, has laid out a clear, practical framework for developing these intelligent systems. This playbook distills his key principles into actionable best practices for anyone looking to build the next generation of AI.\nDesign is an Art: Master the Workflow The first and most crucial lesson is that there’s no single “correct” way to design an agent. Crafting the agent’s workflow is more of an art than a science, but it’s guided by a core principle: be concrete.\nInstead of feeding a model a massive, complex prompt and hoping for the best, break the task down into a logical sequence of smaller, well-defined steps. This “chain of thought” or planning phase is where the magic happens. A typical agentic pattern involves:\nPlanning: The agent outlines the steps it needs to take to achieve a goal.\nAction: The agent executes a step, which might involve writing code, searching the web, or using a specific tool.\nObservation: The agent analyzes the result of its action.\nReflection: The agent critiques its own progress and refines the plan.\nBy defining a clear goal for each step, you create a more robust and predictable system.\nReflection: The Engine of Improvement If there’s one secret weapon in the agentic AI toolkit, it’s reflection. The performance jump from a model like GPT-3.5 to GPT-4 is enormous, requiring vast resources and training data. However, as Ng points out, you can achieve staggering performance gains from a single model simply by implementing a reflection step.\nHere’s how it works:\nThe agent completes a task and generates an initial output.\nThe agent (or a separate “critic” agent) is then prompted to evaluate that output against a set of criteria. Did it follow all instructions? Is the code efficient?\nThe agent refines its initial work based on this self-generated critique.\nThis simple loop of “do, then critique and redo” forces the model to catch its own errors and iteratively improve its output, leading to a much higher-quality result without needing a more powerful base model.\nTool Use: Give Your Agent Superpowers An LLM’s knowledge is limited to its training data. To perform real-world tasks, it needs tools. Agentic frameworks allow models to access custom tools that dramatically expand their capabilities, such as:\nReading and writing to a calendar.\nSearching a private knowledge base.\nExecuting code.\nConverting PDFs to text.\nHowever, with great power comes great responsibility. It is absolutely critical to run agents with powerful tools—especially those that can interact with file systems or external APIs—in a secure sandbox environment. This prevents catastrophic accidents, like an agent deleting an entire directory while trying to complete a simple task.\nEvaluation: The Hardest, Most Important Part How do you know if your agent is actually any good? Evaluation is notoriously difficult but is the bedrock of a successful project. Ng proposes a two-axis framework to think about this:\nAxis 1: The Judge\nEvaluation with Code (Objective): For tasks with a clear right or wrong answer (e.g., solving a math problem, writing code that must compile), you can write scripts to automatically verify the output.\nLLM as Judge (Subjective): For more nuanced tasks (e.g., judging the quality of a marketing email), you can use another LLM to act as a judge. The key here is to provide the judge LLM with a concrete rubric. Don’t just ask, “Is this good?” Ask, “On a scale of 1-5, how well does this email meet the following criteria: a) clear call-to-action, b) professional tone, c) adherence to brand voice?”\nAxis 2: The Ground Truth\nPer-Example Ground Truth: You have a dataset where you know the “correct” answer for every example.\nNo Per-Example Ground Truth: You don’t have perfect answers, so you rely on rubrics, principles, or comparisons.\nThe most effective approach is to start by manually inspecting the agent’s outputs. Create a small dataset of examples (even just 10-20) to track your progress and guide your improvements.\nThe Iterative Development Loop\nBuilding an agent is not a one-shot process. The key is to embrace a rapid, iterative loop:\nBuild: Get a simple, end-to-end version of your agent working as quickly as possible.\nAnalyze: This is the most critical phase.\nExamine Traces: Look at the agent’s step-by-step reasoning. Where did it go wrong?\nError Analysis: Categorize the failures. Is the agent failing at the planning stage? Is a specific tool unreliable?\nCompute Metrics: Use your evaluation sets to get a quantitative measure of performance.\nImprove: Based on your analysis, prioritize what to fix. Your options include:\nPrompt Engineering: Tweak the instructions for a specific step.\nSwap the Model: Different models have different strengths. Some are better at following complex instructions, while others are more creative. Design your system to make swapping models easy.\nFine-Tune: For specialized tasks, you may need to fine-tune a model on your specific data.\nA final piece of advice from Ng: don’t worry about latency and cost at the beginning. Getting the quality right is the hardest part. Speeding it up and making it cheaper is a good problem to have later on. By focusing on workflow, reflection, and rigorous evaluation, you can build truly intelligent agents that go far beyond the capabilities of simple chatbots.\n",
-  "wordCount" : "942",
+  "articleBody": "The world of AI is buzzing with a new paradigm: agentic AI. Instead of simply responding to a single prompt, these AI systems can reason, plan, use tools, and even critique their own work to accomplish complex, multi-step tasks. They represent a significant leap from the non-agentic models we’ve grown accustomed to.\nAs this technology matures, building effective and reliable agents has become a critical skill. AI luminary Andrew Ng, through his Coursera courses published one week ago and YouTube talks, has laid out a clear, practical framework for developing these intelligent systems. This playbook distills his key principles into actionable best practices for anyone looking to build the next generation of AI.\n1. Design is an Art: Master the Workflow The first and most crucial lesson is that there’s no single “correct” way to design an agent. Crafting the agent’s workflow is more of an art than a science, but it’s guided by a core principle: be concrete.\nInstead of feeding a model a massive, complex prompt and hoping for the best, break the task down into a logical sequence of smaller, well-defined steps. This “chain of thought” or planning phase is where the magic happens. A typical agentic pattern involves:\nPlanning: The agent outlines the steps it needs to take to achieve a goal.\nAction: The agent executes a step, which might involve writing code, searching the web, or using a specific tool.\nObservation: The agent analyzes the result of its action.\nReflection: The agent critiques its own progress and refines the plan.\nBy defining a clear goal for each step, you create a more robust and predictable system.\n2. Reflection: The Engine of Improvement If there’s one secret weapon in the agentic AI toolkit, it’s reflection. The performance jump from a model like GPT-3.5 to GPT-4 is enormous, requiring vast resources and training data. However, as Ng points out, you can achieve staggering performance gains from a single model simply by implementing a reflection step.\nHere’s how it works:\nThe agent completes a task and generates an initial output.\nThe agent (or a separate “critic” agent) is then prompted to evaluate that output against a set of criteria. Did it follow all instructions? Is the code efficient?\nThe agent refines its initial work based on this self-generated critique.\nThis simple loop of “do, then critique and redo” forces the model to catch its own errors and iteratively improve its output, leading to a much higher-quality result without needing a more powerful base model.\n3. Tool Use: Give Your Agent Superpowers An LLM’s knowledge is limited to its training data. To perform real-world tasks, it needs tools. Agentic frameworks allow models to access custom tools that dramatically expand their capabilities, such as:\nReading and writing to a calendar.\nSearching a private knowledge base.\nConverting PDFs to text.\nExecuting code (this is the most powerful one).\nHowever, with great power comes great responsibility. It is absolutely critical to run agents with powerful tools—especially those that can interact with file systems or external APIs—in a secure sandbox environment. This prevents catastrophic accidents, like an agent deleting an entire directory while trying to complete a simple task.\n4. Evaluation: The Hardest, Most Important Part How do you know if your agent is actually any good? Evaluation is notoriously difficult but is the bedrock of a successful project. Ng proposes a two-axis framework to think about this:\nAxis 1: The Judge\nEvaluation with Code (Objective): For tasks with a clear right or wrong answer (e.g., solving a math problem, writing code that must compile), you can write scripts to automatically verify the output.\nLLM as Judge (Subjective): For more nuanced tasks (e.g., judging the quality of a marketing email), you can use another LLM to act as a judge. The key here is to provide the judge LLM with a concrete rubric. Don’t just ask, “Is this good?” Ask, “On a scale of 1-5, how well does this email meet the following criteria: a) clear call-to-action, b) professional tone, c) adherence to brand voice?”\nAxis 2: The Ground Truth\nPer-Example Ground Truth: You have a dataset where you know the “correct” answer for every example.\nNo Per-Example Ground Truth: You don’t have perfect answers, so you rely on rubrics, principles, or comparisons.\nThe most effective approach is to start by manually inspecting the agent’s outputs. Create a small dataset of examples (even just 10-20) to track your progress and guide your improvements.\nThe Iterative Development Loop Building an agent is not a one-shot process. The key is to embrace a rapid, iterative loop:\nBuild: Get a simple, end-to-end version of your agent working as quickly as possible.\nAnalyze: This is the most critical phase.\nExamine Traces: Look at the agent’s step-by-step reasoning. Where did it go wrong?\nError Analysis: Categorize the failures. Is the agent failing at the planning stage? Is a specific tool unreliable?\nCompute Metrics: Use your evaluation sets to get a quantitative measure of performance.\nImprove: Based on your analysis, prioritize what to fix. Your options include:\nPrompt Engineering: Tweak the instructions for a specific step.\nSwap the Model: Different models have different strengths. Some are better at following complex instructions, while others are more creative. Design your system to make swapping models easy.\nFine-Tune: For specialized tasks, you may need to fine-tune a model on your specific data.\nA final piece of advice from Ng: don’t worry about latency and cost at the beginning. Getting the quality right is the hardest part. Speeding it up and making it cheaper is a good problem to have later on. By focusing on workflow, reflection, and rigorous evaluation, you can build truly intelligent agents that go far beyond the capabilities of simple chatbots.\n",
+  "wordCount" : "952",
   "inLanguage": "en",
   "datePublished": "2025-10-16T00:00:00Z",
   "dateModified": "2025-10-16T00:00:00Z",
@@ -178,60 +178,139 @@ As this technology matures, building effective and reliable agents has become a 
     <div class="post-meta"><span title='2025-10-16 00:00:00 +0000 UTC'>October 16, 2025</span>&nbsp;·&nbsp;<span>Shirley</span>
 
 </div>
-  </header> 
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#1-design-is-an-art-master-the-workflow" aria-label="1. Design is an Art: Master the Workflow">1. Design is an Art: Master the Workflow</a></li>
+                <li>
+                    <a href="#2-reflection-the-engine-of-improvement" aria-label="2. Reflection: The Engine of Improvement">2. Reflection: The Engine of Improvement</a></li>
+                <li>
+                    <a href="#3-tool-use-give-your-agent-superpowers" aria-label="3. Tool Use: Give Your Agent Superpowers">3. Tool Use: Give Your Agent Superpowers</a></li>
+                <li>
+                    <a href="#4-evaluation-the-hardest-most-important-part" aria-label="4. Evaluation: The Hardest, Most Important Part">4. Evaluation: The Hardest, Most Important Part</a></li>
+                <li>
+                    <a href="#the-iterative-development-loop" aria-label="The Iterative Development Loop">The Iterative Development Loop</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
 
   <div class="post-content"><p>The world of AI is buzzing with a new paradigm: agentic AI. Instead of simply responding to a single prompt, these AI systems can reason, plan, use tools, and even critique their own work to accomplish complex, multi-step tasks. They represent a significant leap from the non-agentic models we&rsquo;ve grown accustomed to.</p>
 <p>As this technology matures, building effective and reliable agents has become a critical skill. AI luminary Andrew Ng, through his <a href="https://www.deeplearning.ai/courses/agentic-ai/">Coursera courses</a> published one week ago and <a href="https://www.youtube.com/watch?v=KrRD7r7y7NY">YouTube talks</a>, has laid out a clear, practical framework for developing these intelligent systems. This playbook distills his key principles into actionable best practices for anyone looking to build the next generation of AI.</p>
-<ol>
-<li>Design is an Art: Master the Workflow</li>
-</ol>
+<h2 id="1-design-is-an-art-master-the-workflow">1. Design is an Art: Master the Workflow<a hidden class="anchor" aria-hidden="true" href="#1-design-is-an-art-master-the-workflow">#</a></h2>
 <p>The first and most crucial lesson is that there&rsquo;s no single &ldquo;correct&rdquo; way to design an agent. Crafting the agent&rsquo;s workflow is more of an art than a science, but it&rsquo;s guided by a core principle: be concrete.</p>
 <p>Instead of feeding a model a massive, complex prompt and hoping for the best, break the task down into a logical sequence of smaller, well-defined steps. This &ldquo;chain of thought&rdquo; or planning phase is where the magic happens. A typical agentic pattern involves:</p>
+<ul>
+<li>
 <p>Planning: The agent outlines the steps it needs to take to achieve a goal.</p>
+</li>
+<li>
 <p>Action: The agent executes a step, which might involve writing code, searching the web, or using a specific tool.</p>
+</li>
+<li>
 <p>Observation: The agent analyzes the result of its action.</p>
+</li>
+<li>
 <p>Reflection: The agent critiques its own progress and refines the plan.</p>
+</li>
+</ul>
 <p>By defining a clear goal for each step, you create a more robust and predictable system.</p>
-<ol start="2">
-<li>Reflection: The Engine of Improvement</li>
-</ol>
+<h2 id="2-reflection-the-engine-of-improvement">2. Reflection: The Engine of Improvement<a hidden class="anchor" aria-hidden="true" href="#2-reflection-the-engine-of-improvement">#</a></h2>
 <p>If there&rsquo;s one secret weapon in the agentic AI toolkit, it&rsquo;s reflection. The performance jump from a model like GPT-3.5 to GPT-4 is enormous, requiring vast resources and training data. However, as Ng points out, you can achieve staggering performance gains from a single model simply by implementing a reflection step.</p>
 <p>Here’s how it works:</p>
+<ul>
+<li>
 <p>The agent completes a task and generates an initial output.</p>
+</li>
+<li>
 <p>The agent (or a separate &ldquo;critic&rdquo; agent) is then prompted to evaluate that output against a set of criteria. Did it follow all instructions? Is the code efficient?</p>
+</li>
+<li>
 <p>The agent refines its initial work based on this self-generated critique.</p>
+</li>
+</ul>
 <p>This simple loop of &ldquo;do, then critique and redo&rdquo; forces the model to catch its own errors and iteratively improve its output, leading to a much higher-quality result without needing a more powerful base model.</p>
-<ol start="3">
-<li>Tool Use: Give Your Agent Superpowers</li>
-</ol>
+<h2 id="3-tool-use-give-your-agent-superpowers">3. Tool Use: Give Your Agent Superpowers<a hidden class="anchor" aria-hidden="true" href="#3-tool-use-give-your-agent-superpowers">#</a></h2>
 <p>An LLM&rsquo;s knowledge is limited to its training data. To perform real-world tasks, it needs tools. Agentic frameworks allow models to access custom tools that dramatically expand their capabilities, such as:</p>
+<ul>
+<li>
 <p>Reading and writing to a calendar.</p>
+</li>
+<li>
 <p>Searching a private knowledge base.</p>
-<p>Executing code.</p>
+</li>
+<li>
 <p>Converting PDFs to text.</p>
+</li>
+<li>
+<p>Executing code (this is the most powerful one).</p>
+</li>
+</ul>
 <p>However, with great power comes great responsibility. It is absolutely critical to run agents with powerful tools—especially those that can interact with file systems or external APIs—in a secure sandbox environment. This prevents catastrophic accidents, like an agent deleting an entire directory while trying to complete a simple task.</p>
-<ol start="4">
-<li>Evaluation: The Hardest, Most Important Part</li>
-</ol>
+<h2 id="4-evaluation-the-hardest-most-important-part">4. Evaluation: The Hardest, Most Important Part<a hidden class="anchor" aria-hidden="true" href="#4-evaluation-the-hardest-most-important-part">#</a></h2>
 <p>How do you know if your agent is actually any good? Evaluation is notoriously difficult but is the bedrock of a successful project. Ng proposes a two-axis framework to think about this:</p>
 <p>Axis 1: The Judge</p>
+<ul>
+<li>
 <p>Evaluation with Code (Objective): For tasks with a clear right or wrong answer (e.g., solving a math problem, writing code that must compile), you can write scripts to automatically verify the output.</p>
+</li>
+<li>
 <p>LLM as Judge (Subjective): For more nuanced tasks (e.g., judging the quality of a marketing email), you can use another LLM to act as a judge. The key here is to provide the judge LLM with a concrete rubric. Don&rsquo;t just ask, &ldquo;Is this good?&rdquo; Ask, &ldquo;On a scale of 1-5, how well does this email meet the following criteria: a) clear call-to-action, b) professional tone, c) adherence to brand voice?&rdquo;</p>
+</li>
+</ul>
 <p>Axis 2: The Ground Truth</p>
+<ul>
+<li>
 <p>Per-Example Ground Truth: You have a dataset where you know the &ldquo;correct&rdquo; answer for every example.</p>
+</li>
+<li>
 <p>No Per-Example Ground Truth: You don&rsquo;t have perfect answers, so you rely on rubrics, principles, or comparisons.</p>
+</li>
+</ul>
 <p>The most effective approach is to start by manually inspecting the agent&rsquo;s outputs. Create a small dataset of examples (even just 10-20) to track your progress and guide your improvements.</p>
-<p>The Iterative Development Loop</p>
+<h2 id="the-iterative-development-loop">The Iterative Development Loop<a hidden class="anchor" aria-hidden="true" href="#the-iterative-development-loop">#</a></h2>
+<ul>
+<li>
 <p>Building an agent is not a one-shot process. The key is to embrace a rapid, iterative loop:</p>
+</li>
+<li>
 <p>Build: Get a simple, end-to-end version of your agent working as quickly as possible.</p>
+<ul>
+<li>
 <p>Analyze: This is the most critical phase.</p>
+</li>
+<li>
 <p>Examine Traces: Look at the agent&rsquo;s step-by-step reasoning. Where did it go wrong?</p>
+</li>
+<li>
 <p>Error Analysis: Categorize the failures. Is the agent failing at the planning stage? Is a specific tool unreliable?</p>
+</li>
+<li>
 <p>Compute Metrics: Use your evaluation sets to get a quantitative measure of performance.</p>
+</li>
+</ul>
+</li>
+<li>
 <p>Improve: Based on your analysis, prioritize what to fix. Your options include:</p>
+<ul>
+<li>
 <p>Prompt Engineering: Tweak the instructions for a specific step.</p>
+</li>
+<li>
 <p>Swap the Model: Different models have different strengths. Some are better at following complex instructions, while others are more creative. Design your system to make swapping models easy.</p>
+</li>
+<li>
 <p>Fine-Tune: For specialized tasks, you may need to fine-tune a model on your specific data.</p>
+</li>
+</ul>
+</li>
+</ul>
 <p>A final piece of advice from Ng: don&rsquo;t worry about latency and cost at the beginning. Getting the quality right is the hardest part. Speeding it up and making it cheaper is a good problem to have later on. By focusing on workflow, reflection, and rigorous evaluation, you can build truly intelligent agents that go far beyond the capabilities of simple chatbots.</p>
 
 
