@@ -6,8 +6,16 @@
     <description>Recent content on Shirley Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AGI is a Decade Away from Andrej Karpathy</title>
+      <link>https://chenzheruc.github.io/posts/20251018_agi/</link>
+      <pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://chenzheruc.github.io/posts/20251018_agi/</guid>
+      <description>&lt;p&gt;In September 2024, Sam Altman published &lt;a href=&#34;https://ia.samaltman.com/&#34;&gt;a blog post&lt;/a&gt; discussing &amp;ldquo;The Intelligence Age&amp;rdquo; and stated, &amp;ldquo;It is possible that we will have superintelligence in a few thousand days (!); it may take longer, but I&amp;rsquo;m confident we&amp;rsquo;ll get there&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;In the whirlwind of AI advancements, it&amp;rsquo;s easy to believe that Artificial General Intelligence (AGI) is just around the corner. Every week, a new model is released that shatters previous benchmarks, writes better code, or creates more realistic images. The hype cycle suggests we are on the precipice of a new dawn. Yet, one of the most respected minds in the field, Andrej Karpathy, recently poured a dose of realism on the fire, stating that  AGI is still &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/watch?v=lXUZvyajciY&#34;&gt;a decade away.&lt;/a&gt;&amp;rdquo; &lt;/p&gt;</description>
+    </item>
     <item>
       <title>Andrew Ng&#39;s Agentic AI Playbook</title>
       <link>https://chenzheruc.github.io/posts/20251016_andrew_ng_agentic_ai/</link>
@@ -65,14 +73,6 @@ This is the story of that little coding sprint.&lt;/p&gt;</description>
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Sora 2 are gaining popularity; however, detailed public documentation regarding their underlying training methodologies remains scarce. OpenAI simply noted that Sora takes inspiration from large language models (LLMs) that acquire generalist capabilities by training on &amp;ldquo;&lt;a href=&#34;https://openai.com/index/video-generation-models-as-world-simulators/&#34;&gt;internet-scale data&lt;/a&gt;. It is possible that OpenAI may have scraped YouTube content without permission from Google. On the other hand, Google’s Veo is assumed to benefit from YouTube&amp;rsquo;s high-quality video. The implication is clear: the ability to generate realistic video is directly proportional to access to petabytes of high-quality, varied footage.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AGI is a Decade Away from Andrej Karpathy</title>
-      <link>https://chenzheruc.github.io/posts/20251018_agi/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://chenzheruc.github.io/posts/20251018_agi/</guid>
-      <description>&lt;p&gt;In September 2024, Sam Altman published &lt;a href=&#34;https://ia.samaltman.com/&#34;&gt;a blog post&lt;/a&gt; discussing &amp;ldquo;The Intelligence Age&amp;rdquo; and stated, &amp;ldquo;It is possible that we will have superintelligence in a few thousand days (!); it may take longer, but I&amp;rsquo;m confident we&amp;rsquo;ll get there&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;In the whirlwind of AI advancements, it&amp;rsquo;s easy to believe that Artificial General Intelligence (AGI) is just around the corner. Every week, a new model is released that shatters previous benchmarks, writes better code, or creates more realistic images. The hype cycle suggests we are on the precipice of a new dawn. Yet, one of the most respected minds in the field, Andrej Karpathy, recently poured a dose of realism on the fire, stating that  AGI is still &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/watch?v=lXUZvyajciY&#34;&gt;a decade away.&lt;/a&gt;&amp;rdquo; &lt;/p&gt;</description>
     </item>
     <item>
       <title>The Roadblocks to AI Adoption: Key Challenges</title>
