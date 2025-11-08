@@ -6,8 +6,16 @@
     <description>Recent content in Posts on Shirley Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 18 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Twilight of RAG: How LLM In-Context Ranking is Rewriting the Rules</title>
+      <link>https://chenzheruc.github.io/posts/20251108_rag_is_dead/</link>
+      <pubDate>Sat, 08 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://chenzheruc.github.io/posts/20251108_rag_is_dead/</guid>
+      <description>&lt;p&gt;For the past few years, Retrieval-Augmented Generation (RAG) has been the cornerstone of scaling Large Language Models (LLMs) to massive knowledge bases. Since early LLMs suffered from limited input length—with models like GPT-4 handling only about 8,192 tokens (roughly 12 pages)—RAG provided an elegant, if complex, workaround: retrieve the most relevant fragments and feed those to the LLM.
+However, the rapid evolution of LLMs and their specialized ranking capabilities, combined with exploding context windows, suggests that the traditional RAG architecture we built and optimized is fundamentally on the decline.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AGI is a Decade Away from Andrej Karpathy</title>
       <link>https://chenzheruc.github.io/posts/20251018_agi/</link>
