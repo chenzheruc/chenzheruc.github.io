@@ -6,23 +6,23 @@
     <description>Recent content on Shirley Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 15:00:54 +0530</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Geoffrey Hinton: They’re spending $420 billion on AI. It only pays off if they fire you</title>
-      <link>https://chenzheruc.github.io/posts/20251109_hinton_ai/</link>
-      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://chenzheruc.github.io/posts/20251109_hinton_ai/</guid>
-      <description>&lt;p&gt;Geoffrey Hinton is the Nobel Prize-winning academic known as the “Godfather of AI” for his foundational work on neural networks. He spent decades at Google, building the very technology that now powers our world. Then, he quit. He left his high-paying role so he could speak freely about the dangers of the technology he helped create.&lt;/p&gt;
-&lt;p&gt;His warnings have ranged from existential risk to the &amp;ldquo;end of humanity.&amp;rdquo; But in a recent, stunningly blunt interview, Hinton swapped his philosopher&amp;rsquo;s hat for a CFO&amp;rsquo;s visor. He didn’t talk about paperclip-maximizing terminators; he talked about simple, cold, hard capitalism.&lt;/p&gt;</description>
-    </item>
     <item>
       <title>The AI Scapegoat: Is AI Really Behind the Big Tech Layoffs?</title>
       <link>https://chenzheruc.github.io/posts/20251109_layoff/</link>
-      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Nov 2025 15:00:54 +0530</pubDate>
       <guid>https://chenzheruc.github.io/posts/20251109_layoff/</guid>
       <description>&lt;p&gt;If you follow the business world, you&amp;rsquo;ve heard the drumbeat. Scarcely a week goes by without a major tech company—be it Google, Amazon, Meta, or Microsoft—announcing a new round of &amp;ldquo;restructuring.&amp;rdquo; Thousands of jobs are cut, and amidst the corporate-speak about &amp;ldquo;streamlining&amp;rdquo; and &amp;ldquo;finding efficiencies,&amp;rdquo; a new two-letter buzzword has taken center stage: AI.&lt;/p&gt;
 &lt;p&gt;The official narrative is compelling. We&amp;rsquo;re told that new generative AI tools are so powerful, so efficient, that the company can suddenly achieve more with fewer people. Roles in customer service, HR, recruiting, and even entry-level coding are being automated. The layoffs, therefore, are not a failure of management, but an inevitable, futuristic step in technological progress.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Geoffrey Hinton: They’re spending $420 billion on AI. It only pays off if they fire you</title>
+      <link>https://chenzheruc.github.io/posts/20251109_hinton_ai/</link>
+      <pubDate>Sun, 09 Nov 2025 09:00:00 +0530</pubDate>
+      <guid>https://chenzheruc.github.io/posts/20251109_hinton_ai/</guid>
+      <description>&lt;p&gt;Geoffrey Hinton is the Nobel Prize-winning academic known as the “Godfather of AI” for his foundational work on neural networks. He spent decades at Google, building the very technology that now powers our world. Then, he quit. He left his high-paying role so he could speak freely about the dangers of the technology he helped create.&lt;/p&gt;
+&lt;p&gt;His warnings have ranged from existential risk to the &amp;ldquo;end of humanity.&amp;rdquo; But in a recent, stunningly blunt interview, Hinton swapped his philosopher&amp;rsquo;s hat for a CFO&amp;rsquo;s visor. He didn’t talk about paperclip-maximizing terminators; he talked about simple, cold, hard capitalism.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Twilight of RAG: How LLM In-Context Ranking is Rewriting the Rules</title>
