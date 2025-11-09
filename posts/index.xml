@@ -6,8 +6,16 @@
     <description>Recent content in Posts on Shirley Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 08 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geoffrey Hinton: They’re spending $420 billion on AI. It only pays off if they fire you</title>
+      <link>https://chenzheruc.github.io/posts/20251109_hinton_ai/</link>
+      <pubDate>Sun, 09 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://chenzheruc.github.io/posts/20251109_hinton_ai/</guid>
+      <description>&lt;p&gt;Geoffrey Hinton is the Nobel Prize-winning academic known as the “Godfather of AI” for his foundational work on neural networks. He spent decades at Google, building the very technology that now powers our world. Then, he quit. He left his high-paying role so he could speak freely about the dangers of the technology he helped create.&lt;/p&gt;
+&lt;p&gt;His warnings have ranged from existential risk to the &amp;ldquo;end of humanity.&amp;rdquo; But in a recent, stunningly blunt interview, Hinton swapped his philosopher&amp;rsquo;s hat for a CFO&amp;rsquo;s visor. He didn’t talk about paperclip-maximizing terminators; he talked about simple, cold, hard capitalism.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Twilight of RAG: How LLM In-Context Ranking is Rewriting the Rules</title>
       <link>https://chenzheruc.github.io/posts/20251108_rag_is_dead/</link>
@@ -81,14 +89,6 @@ This is the story of that little coding sprint.&lt;/p&gt;</description>
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Sora 2 are gaining popularity; however, detailed public documentation regarding their underlying training methodologies remains scarce. OpenAI simply noted that Sora takes inspiration from large language models (LLMs) that acquire generalist capabilities by training on &amp;ldquo;&lt;a href=&#34;https://openai.com/index/video-generation-models-as-world-simulators/&#34;&gt;internet-scale data&lt;/a&gt;. It is possible that OpenAI may have scraped YouTube content without permission from Google. On the other hand, Google’s Veo is assumed to benefit from YouTube&amp;rsquo;s high-quality video. The implication is clear: the ability to generate realistic video is directly proportional to access to petabytes of high-quality, varied footage.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Geoffrey Hinton: They’re spending $420 billion on AI. It only pays off if they fire you</title>
-      <link>https://chenzheruc.github.io/posts/20251109_hinton_ai/</link>
-      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
-      <guid>https://chenzheruc.github.io/posts/20251109_hinton_ai/</guid>
-      <description>&lt;p&gt;Geoffrey Hinton is the Nobel Prize-winning academic known as the “Godfather of AI” for his foundational work on neural networks. He spent decades at Google, building the very technology that now powers our world. Then, he quit. He left his high-paying role so he could speak freely about the dangers of the technology he helped create.&lt;/p&gt;
-&lt;p&gt;His warnings have ranged from existential risk to the &amp;ldquo;end of humanity.&amp;rdquo; But in a recent, stunningly blunt interview, Hinton swapped his philosopher&amp;rsquo;s hat for a CFO&amp;rsquo;s visor. He didn’t talk about paperclip-maximizing terminators; he talked about simple, cold, hard capitalism.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Roadblocks to AI Adoption: Key Challenges</title>
