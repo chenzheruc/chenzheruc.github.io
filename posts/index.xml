@@ -6,12 +6,21 @@
     <description>Recent content in Posts on Shirley Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Dec 2025 23:00:00 +0530</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The 40-Point Inquisition: When AI Reviews AI at ICLR</title>
+      <link>https://chenzheruc.github.io/posts/20251205_iclr/</link>
+      <pubDate>Fri, 05 Dec 2025 23:00:00 +0530</pubDate>
+      <guid>https://chenzheruc.github.io/posts/20251205_iclr/</guid>
+      <description>&lt;p&gt;In the high-stakes world of top-tier AI conferences like ICLR (International Conference on Learning Representations), getting a paper accepted is a career-defining moment. Authors spend months optimizing algorithms, ablation studies, and prose. They expect rigor. They expect tough questions.&lt;/p&gt;
+&lt;p&gt;They do not expect 40 weaknesses and 40 questions from a single reviewer.&lt;/p&gt;
+&lt;p&gt;A recent incident involving an ICLR 2026 submission has set the Machine Learning community on fire, highlighting a growing crisis in academic peer review: the suspicion that AI is now reviewing AI, and doing a terrible job of it.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Fork in the Road: Job Hunting as a Principal Engineer vs. Director</title>
       <link>https://chenzheruc.github.io/posts/20251205_job_hunt/</link>
-      <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 05 Dec 2025 22:00:00 +0530</pubDate>
       <guid>https://chenzheruc.github.io/posts/20251205_job_hunt/</guid>
       <description>&lt;p&gt;Job hunting at the executive or principal level is a fundamental departure from the standard engineering search. At this altitude, the goal is no longer to demonstrate competency in coding or sprint management. Instead, you must prove your capacity to move the needle for an entire organization. While the end goal—organizational impact—is shared, the mechanisms for proving your value differ wildly between the Individual Contributor (IC) track and the Management track.&lt;/p&gt;</description>
     </item>
