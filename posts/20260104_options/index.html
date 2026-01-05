@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Secret Language of Options Trading | Shirley Blogs</title>
+<meta name="keywords" content="">
+<meta name="description" content="In options trading, the Greeks are a set of risk measures—represented by Greek letters—that tell you exactly how an option&rsquo;s price will react to changes in the market. Think of them as the dashboard of a car. They tell you your speed, your acceleration, how much fuel you have left, and what the weather is doing outside.
+Delta ($\Delta$): The Speedometer
+What it measures: Price sensitivity.
+The Question it Answers: &ldquo;If the stock price moves $1, how much does my option price move?&rdquo;">
+<meta name="author" content="Shirley">
+<link rel="canonical" href="https://chenzheruc.github.io/posts/20260104_options/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://chenzheruc.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://chenzheruc.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://chenzheruc.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://chenzheruc.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://chenzheruc.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://chenzheruc.github.io/posts/20260104_options/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZKM2YW9DPM"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-ZKM2YW9DPM');
+        }
+      </script><meta property="og:url" content="https://chenzheruc.github.io/posts/20260104_options/">
+  <meta property="og:site_name" content="Shirley Blogs">
+  <meta property="og:title" content="The Secret Language of Options Trading">
+  <meta property="og:description" content="In options trading, the Greeks are a set of risk measures—represented by Greek letters—that tell you exactly how an option’s price will react to changes in the market. Think of them as the dashboard of a car. They tell you your speed, your acceleration, how much fuel you have left, and what the weather is doing outside.
+Delta ($\Delta$): The Speedometer What it measures: Price sensitivity.
+The Question it Answers: “If the stock price moves $1, how much does my option price move?”">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-04T12:00:00+05:30">
+    <meta property="article:modified_time" content="2026-01-04T12:00:00+05:30">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Secret Language of Options Trading">
+<meta name="twitter:description" content="In options trading, the Greeks are a set of risk measures—represented by Greek letters—that tell you exactly how an option&rsquo;s price will react to changes in the market. Think of them as the dashboard of a car. They tell you your speed, your acceleration, how much fuel you have left, and what the weather is doing outside.
+Delta ($\Delta$): The Speedometer
+What it measures: Price sensitivity.
+The Question it Answers: &ldquo;If the stock price moves $1, how much does my option price move?&rdquo;">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://chenzheruc.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Secret Language of Options Trading",
+      "item": "https://chenzheruc.github.io/posts/20260104_options/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Secret Language of Options Trading",
+  "name": "The Secret Language of Options Trading",
+  "description": "In options trading, the Greeks are a set of risk measures—represented by Greek letters—that tell you exactly how an option\u0026rsquo;s price will react to changes in the market. Think of them as the dashboard of a car. They tell you your speed, your acceleration, how much fuel you have left, and what the weather is doing outside.\nDelta ($\\Delta$): The Speedometer What it measures: Price sensitivity.\nThe Question it Answers: \u0026ldquo;If the stock price moves $1, how much does my option price move?\u0026rdquo;\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "In options trading, the Greeks are a set of risk measures—represented by Greek letters—that tell you exactly how an option’s price will react to changes in the market. Think of them as the dashboard of a car. They tell you your speed, your acceleration, how much fuel you have left, and what the weather is doing outside.\nDelta ($\\Delta$): The Speedometer What it measures: Price sensitivity.\nThe Question it Answers: “If the stock price moves $1, how much does my option price move?”\nDelta is the most famous Greek. It measures how much the price of an option is expected to change for every $1 change in the underlying stock.\nThe Analogy: Your Current Speed\nImagine you are driving a car. Delta is your speedometer. It tells you how fast your option’s value is moving relative to the stock.\nCall Options: Have a positive Delta (0 to 1.0). If the stock goes up, you make money.\nPut Options: Have a negative Delta (-1.0 to 0). If the stock goes up, you lose money.\nReal-World Example\nYou buy a Call option for Apple (AAPL) with a Delta of 0.50.\nScenario: AAPL stock rises by $1.00.\nResult: Your option price increases by $0.50.\nTrader’s Secret: Delta is also commonly used as a proxy for probability. A Delta of 0.30 roughly implies the option has a 30% chance of expiring “In The Money” (ITM).\nGamma ($\\Gamma$): The Accelerator What it measures: The rate of change of Delta.\nThe Question it Answers: “How fast will my Delta change if the stock keeps moving?”\nDelta isn’t static; it changes as the stock price moves. Gamma measures how fast Delta changes.\nThe Analogy: The Gas Pedal (Acceleration)\nIf Delta is your speed, Gamma is your acceleration.\nIf you have low Gamma, your speed (Delta) changes slowly. You are cruising.\nIf you have high Gamma, you are slamming on the gas pedal. Your P\u0026L (Profit and Loss) will swing violently with even small moves in the stock price.\nReal-World Example\nContinuing with our AAPL Call option:\nCurrent Delta: 0.50\nCurrent Gamma: 0.10\nScenario: AAPL stock rises by $1.00.\nResult: Your option price goes up by $0.50 (thanks to Delta). However, your new Delta becomes 0.60 (0.50 + 0.10).\nImpact: The next $1.00 move in the stock will make you $0.60 instead of $0.50. You are accelerating!\nThe Danger Zone: Negative Gamma\nWhile buying options gives you Positive Gamma (acceleration in your favor), selling (shorting) options gives you Negative Gamma.\nThe Analogy: Driving Downhill Without Brakes When you have Negative Gamma, big market moves hurt you exponentially.\nIf the market goes against you: Your losses accelerate. A $1 move hurts a little, but the next $1 move hurts even more because your position size effectively increases against you.\nThe Risk: This is often described as “picking up pennies in front of a steamroller.” You collect steady income (Theta), but if the steamroller (Negative Gamma) catches you during a crash or spike, you get crushed.\nTheta ($\\Theta$): The Ice Cube What it measures: Time decay.\nThe Question it Answers: “How much value does this option lose every day that passes?”\nOptions have an expiration date. As that date gets closer, the option becomes less valuable because there is less time for the stock to make a big move. This erosion of value is called Time Decay.\nThe Analogy: A Melting Ice Cube\nImagine holding an ice cube in your hand on a hot day. Even if you stand perfectly still, the ice cube (your option’s value) is melting.\nTheta is negative for option buyers (Long Calls/Puts). Every day, you “pay” Theta.\nTheta is positive for option sellers. Every day, they “collect” Theta.\nReal-World Example\nYou own a Call option worth $2.00 with a Theta of -0.05.\nScenario: One day passes, and the stock price stays exactly the same.\nResult: Your option is now worth $1.95. You lost $0.05 just because the sun went down.\nNote: The “melting” speeds up as you get closer to expiration. An option with 30 days left decays slowly; an option with 2 days left melts like an ice cube in a furnace.\nVega ($\\nu$): The Turbulence What it measures: Sensitivity to Volatility.\nThe Question it Answers: “How much will the option price change if the market gets fearful or excited?”\nNote: Vega is not actually a Greek letter, but traders treat it like one!\nVega measures how an option’s price changes when Implied Volatility (IV) changes by 1%. IV is essentially the market’s forecast of future price swings.\nThe Analogy: The Weather (Turbulence)\nThink of buying an option like buying flight insurance.\nLow Volatility (Sunny skies): Insurance is cheap because the risk of a crash is low.\nHigh Volatility (Storm warning): Insurance is expensive because everyone is scared of a crash.\nIf a storm is coming (e.g., an Earnings Report), Vega pumps up the price of the option, even if the stock price hasn’t moved yet.\nReal-World Example\nYou hold a Long Call with a Vega of 0.10. The stock price doesn’t move, but the market gets nervous about tomorrow’s election results.\nScenario: Implied Volatility jumps by 5%.\nResult: Your option value increases by $0.50 (5% $\\times$ 0.10), purely because the “premium” for uncertainty went up.\nRho ($\\rho$): The Wind What it measures: Sensitivity to Interest Rates.\nThe Question it Answers: “How does the interest rate affect my option?”\nRho measures the change in option price for a 1% change in the risk-free interest rate (like US Treasury rates).\nThe Analogy: A Gentle Wind\nFor most short-term traders, Rho is like a light breeze—you know it’s there, but it rarely changes your drive significantly. However, if you are planning a long cross-country trip (holding options for 1-2 years, known as LEAPS), a headwind or tailwind can make a big difference in fuel efficiency.\nCall Options: Generally have positive Rho (higher rates = higher call prices).\nPut Options: Generally have negative Rho (higher rates = lower put prices).\nUnless you are trading long-term options (LEAPS), Rho is usually the least important Greek to watch.\nThe Engine Under the Hood: How Are They Calculated? The Greeks are calculated using a mathematical formula called the Black-Scholes Model (or Black-Scholes-Merton), developed in 1973. This formula won a Nobel Prize in Economics.\nIn simple terms, the model acts as a sophisticated probability machine. It assumes that stock prices wander randomly (standard distribution) and calculates the statistical likelihood of a stock reaching a specific price by the expiration date. By determining this probability, it establishes a “fair value” for the premium you pay today.\nSummary Cheat Sheet Greek Symbol What it Measures The Analogy Who Loves It? Delta $\\Delta$ Price Sensitivity Speedometer Directional Traders Gamma $\\Gamma$ Acceleration of Price Gas Pedal Day Traders / Scalpers Theta $\\Theta$ Time Decay Melting Ice Cube Option Sellers Vega $\\nu$ Volatility Sensitivity Turbulence / Storm Event Traders Rho $\\rho$ Interest Rate Sensitivity The Wind Long-term Investors ",
+  "wordCount" : "1152",
+  "inLanguage": "en",
+  "datePublished": "2026-01-04T12:00:00+05:30",
+  "dateModified": "2026-01-04T12:00:00+05:30",
+  "author":{
+    "@type": "Person",
+    "name": "Shirley"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://chenzheruc.github.io/posts/20260104_options/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shirley Blogs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://chenzheruc.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://chenzheruc.github.io/" accesskey="h" title="Shirley Blogs (Alt + H)">Shirley Blogs</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://chenzheruc.github.io/archives" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chenzheruc.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://chenzheruc.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      The Secret Language of Options Trading
+    </h1>
+    <div class="post-meta"><span title='2026-01-04 12:00:00 +0530 +0530'>January 4, 2026</span>&nbsp;·&nbsp;<span>Shirley</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>In options trading, the Greeks are a set of risk measures—represented by Greek letters—that tell you exactly how an option&rsquo;s price will react to changes in the market. Think of them as the dashboard of a car. They tell you your speed, your acceleration, how much fuel you have left, and what the weather is doing outside.</p>
+<h2 id="delta-delta-the-speedometer">Delta ($\Delta$): The Speedometer<a hidden class="anchor" aria-hidden="true" href="#delta-delta-the-speedometer">#</a></h2>
+<p><strong>What it measures:</strong> Price sensitivity.</p>
+<p><strong>The Question it Answers:</strong> &ldquo;If the stock price moves $1, how much does my option price move?&rdquo;</p>
+<p>Delta is the most famous Greek. It measures how much the price of an option is expected to change for every $1 change in the underlying stock.</p>
+<p><strong>The Analogy: Your Current Speed</strong></p>
+<p>Imagine you are driving a car. Delta is your speedometer. It tells you how fast your option&rsquo;s value is moving relative to the stock.</p>
+<ul>
+<li>
+<p>Call Options: Have a positive Delta (0 to 1.0). If the stock goes up, you make money.</p>
+</li>
+<li>
+<p>Put Options: Have a negative Delta (-1.0 to 0). If the stock goes up, you lose money.</p>
+</li>
+</ul>
+<p><strong>Real-World Example</strong></p>
+<p>You buy a Call option for Apple (AAPL) with a Delta of 0.50.</p>
+<p>Scenario: AAPL stock rises by $1.00.</p>
+<p>Result: Your option price increases by $0.50.</p>
+<p>Trader&rsquo;s Secret: Delta is also commonly used as a <strong>proxy for probability</strong>. A Delta of 0.30 roughly implies the option has a 30% chance of expiring &ldquo;In The Money&rdquo; (ITM).</p>
+<h2 id="gamma-gamma-the-accelerator">Gamma ($\Gamma$): The Accelerator<a hidden class="anchor" aria-hidden="true" href="#gamma-gamma-the-accelerator">#</a></h2>
+<p><strong>What it measures:</strong> The rate of change of Delta.</p>
+<p><strong>The Question it Answers:</strong> &ldquo;How fast will my Delta change if the stock keeps moving?&rdquo;</p>
+<p>Delta isn&rsquo;t static; it changes as the stock price moves. Gamma measures how fast Delta changes.</p>
+<p><strong>The Analogy: The Gas Pedal (Acceleration)</strong></p>
+<p>If Delta is your speed, Gamma is your acceleration.</p>
+<p>If you have low Gamma, your speed (Delta) changes slowly. You are cruising.</p>
+<p>If you have high Gamma, you are slamming on the gas pedal. Your P&amp;L (Profit and Loss) will swing violently with even small moves in the stock price.</p>
+<p><strong>Real-World Example</strong></p>
+<p>Continuing with our AAPL Call option:</p>
+<ul>
+<li>
+<p>Current Delta: 0.50</p>
+</li>
+<li>
+<p>Current Gamma: 0.10</p>
+</li>
+<li>
+<p>Scenario: AAPL stock rises by $1.00.</p>
+</li>
+<li>
+<p>Result: Your option price goes up by $0.50 (thanks to Delta). However, your new Delta becomes 0.60 (0.50 + 0.10).</p>
+</li>
+<li>
+<p>Impact: The next $1.00 move in the stock will make you $0.60 instead of $0.50. You are accelerating!</p>
+</li>
+</ul>
+<p><strong>The Danger Zone: Negative Gamma</strong></p>
+<p>While buying options gives you Positive Gamma (acceleration in your favor), selling (shorting) options gives you Negative Gamma.</p>
+<p>The Analogy: Driving Downhill Without Brakes
+When you have Negative Gamma, big market moves hurt you exponentially.</p>
+<p>If the market goes against you: Your losses accelerate. A $1 move hurts a little, but the next $1 move hurts even more because your position size effectively increases against you.</p>
+<p>The Risk: This is often described as &ldquo;picking up pennies in front of a steamroller.&rdquo; You collect steady income (Theta), but if the steamroller (Negative Gamma) catches you during a crash or spike, you get crushed.</p>
+<h2 id="theta-theta-the-ice-cube">Theta ($\Theta$): The Ice Cube<a hidden class="anchor" aria-hidden="true" href="#theta-theta-the-ice-cube">#</a></h2>
+<p><strong>What it measures:</strong> Time decay.</p>
+<p><strong>The Question it Answers:</strong> &ldquo;How much value does this option lose every day that passes?&rdquo;</p>
+<p>Options have an expiration date. As that date gets closer, the option becomes less valuable because there is less time for the stock to make a big move. This erosion of value is called Time Decay.</p>
+<p><strong>The Analogy: A Melting Ice Cube</strong></p>
+<p>Imagine holding an ice cube in your hand on a hot day. Even if you stand perfectly still, the ice cube (your option&rsquo;s value) is melting.</p>
+<ul>
+<li>
+<p>Theta is negative for option buyers (Long Calls/Puts). Every day, you &ldquo;pay&rdquo; Theta.</p>
+</li>
+<li>
+<p>Theta is positive for option sellers. Every day, they &ldquo;collect&rdquo; Theta.</p>
+</li>
+</ul>
+<p><strong>Real-World Example</strong></p>
+<p>You own a Call option worth $2.00 with a Theta of -0.05.</p>
+<ul>
+<li>
+<p>Scenario: One day passes, and the stock price stays exactly the same.</p>
+</li>
+<li>
+<p>Result: Your option is now worth $1.95. You lost $0.05 just because the sun went down.</p>
+</li>
+</ul>
+<p>Note: The &ldquo;melting&rdquo; speeds up as you get closer to expiration. An option with 30 days left decays slowly; an option with 2 days left melts like an ice cube in a furnace.</p>
+<h2 id="vega-nu-the-turbulence">Vega ($\nu$): The Turbulence<a hidden class="anchor" aria-hidden="true" href="#vega-nu-the-turbulence">#</a></h2>
+<p><strong>What it measures:</strong> Sensitivity to Volatility.</p>
+<p><strong>The Question it Answers:</strong> &ldquo;How much will the option price change if the market gets fearful or excited?&rdquo;</p>
+<p>Note: Vega is not actually a Greek letter, but traders treat it like one!</p>
+<p>Vega measures how an option&rsquo;s price changes when Implied Volatility (IV) changes by 1%. IV is essentially the market&rsquo;s forecast of future price swings.</p>
+<p><strong>The Analogy: The Weather (Turbulence)</strong></p>
+<p>Think of buying an option like buying flight insurance.</p>
+<ul>
+<li>
+<p>Low Volatility (Sunny skies): Insurance is cheap because the risk of a crash is low.</p>
+</li>
+<li>
+<p>High Volatility (Storm warning): Insurance is expensive because everyone is scared of a crash.</p>
+</li>
+</ul>
+<p>If a storm is coming (e.g., an Earnings Report), Vega pumps up the price of the option, even if the stock price hasn&rsquo;t moved yet.</p>
+<p><strong>Real-World Example</strong></p>
+<p>You hold a Long Call with a Vega of 0.10. The stock price doesn&rsquo;t move, but the market gets nervous about tomorrow&rsquo;s election results.</p>
+<ul>
+<li>
+<p>Scenario: Implied Volatility jumps by 5%.</p>
+</li>
+<li>
+<p>Result: Your option value increases by $0.50 (5% $\times$ 0.10), purely because the &ldquo;premium&rdquo; for uncertainty went up.</p>
+</li>
+</ul>
+<h2 id="rho-rho-the-wind">Rho ($\rho$): The Wind<a hidden class="anchor" aria-hidden="true" href="#rho-rho-the-wind">#</a></h2>
+<p><strong>What it measures:</strong> Sensitivity to Interest Rates.</p>
+<p><strong>The Question it Answers:</strong> &ldquo;How does the interest rate affect my option?&rdquo;</p>
+<p>Rho measures the change in option price for a 1% change in the risk-free interest rate (like US Treasury rates).</p>
+<p><strong>The Analogy: A Gentle Wind</strong></p>
+<p>For most short-term traders, Rho is like a light breeze—you know it&rsquo;s there, but it rarely changes your drive significantly. However, if you are planning a long cross-country trip (holding options for 1-2 years, known as LEAPS), a headwind or tailwind can make a big difference in fuel efficiency.</p>
+<ul>
+<li>
+<p>Call Options: Generally have positive Rho (higher rates = higher call prices).</p>
+</li>
+<li>
+<p>Put Options: Generally have negative Rho (higher rates = lower put prices).</p>
+</li>
+</ul>
+<p>Unless you are trading long-term options (LEAPS), Rho is usually the least important Greek to watch.</p>
+<h2 id="the-engine-under-the-hood-how-are-they-calculated">The Engine Under the Hood: How Are They Calculated?<a hidden class="anchor" aria-hidden="true" href="#the-engine-under-the-hood-how-are-they-calculated">#</a></h2>
+<p>The Greeks are calculated using a mathematical formula called the Black-Scholes Model (or Black-Scholes-Merton), developed in 1973. This formula won a Nobel Prize in Economics.</p>
+<p>In simple terms, the model acts as a sophisticated probability machine. It assumes that stock prices wander randomly (standard distribution) and calculates the statistical likelihood of a stock reaching a specific price by the expiration date. By determining this probability, it establishes a &ldquo;fair value&rdquo; for the premium you pay today.</p>
+<h2 id="summary-cheat-sheet">Summary Cheat Sheet<a hidden class="anchor" aria-hidden="true" href="#summary-cheat-sheet">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Greek</th>
+          <th style="text-align: center">Symbol</th>
+          <th style="text-align: left">What it Measures</th>
+          <th style="text-align: left">The Analogy</th>
+          <th style="text-align: left">Who Loves It?</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Delta</strong></td>
+          <td style="text-align: center">$\Delta$</td>
+          <td style="text-align: left">Price Sensitivity</td>
+          <td style="text-align: left">Speedometer</td>
+          <td style="text-align: left">Directional Traders</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Gamma</strong></td>
+          <td style="text-align: center">$\Gamma$</td>
+          <td style="text-align: left">Acceleration of Price</td>
+          <td style="text-align: left">Gas Pedal</td>
+          <td style="text-align: left">Day Traders / Scalpers</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Theta</strong></td>
+          <td style="text-align: center">$\Theta$</td>
+          <td style="text-align: left">Time Decay</td>
+          <td style="text-align: left">Melting Ice Cube</td>
+          <td style="text-align: left">Option Sellers</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Vega</strong></td>
+          <td style="text-align: center">$\nu$</td>
+          <td style="text-align: left">Volatility Sensitivity</td>
+          <td style="text-align: left">Turbulence / Storm</td>
+          <td style="text-align: left">Event Traders</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Rho</strong></td>
+          <td style="text-align: center">$\rho$</td>
+          <td style="text-align: left">Interest Rate Sensitivity</td>
+          <td style="text-align: left">The Wind</td>
+          <td style="text-align: left">Long-term Investors</td>
+      </tr>
+  </tbody>
+</table>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://chenzheruc.github.io/">Shirley Blogs</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -6,8 +6,18 @@
     <description>Recent content in Posts on Shirley Blogs</description>
     <generator>Hugo -- 0.150.1</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Dec 2025 12:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 04 Jan 2026 12:00:00 +0530</lastBuildDate>
     <atom:link href="https://chenzheruc.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Secret Language of Options Trading</title>
+      <link>https://chenzheruc.github.io/posts/20260104_options/</link>
+      <pubDate>Sun, 04 Jan 2026 12:00:00 +0530</pubDate>
+      <guid>https://chenzheruc.github.io/posts/20260104_options/</guid>
+      <description>&lt;p&gt;In options trading, the Greeks are a set of risk measures—represented by Greek letters—that tell you exactly how an option&amp;rsquo;s price will react to changes in the market. Think of them as the dashboard of a car. They tell you your speed, your acceleration, how much fuel you have left, and what the weather is doing outside.&lt;/p&gt;
+&lt;h2 id=&#34;delta-delta-the-speedometer&#34;&gt;Delta ($\Delta$): The Speedometer&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;What it measures:&lt;/strong&gt; Price sensitivity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Question it Answers:&lt;/strong&gt; &amp;ldquo;If the stock price moves $1, how much does my option price move?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The End of Guaranteed Win: Why Ilya Sutskever Says We&#39;re Entering the Age of Discovery</title>
       <link>https://chenzheruc.github.io/posts/20251207_ilya/</link>
